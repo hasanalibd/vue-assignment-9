@@ -20,7 +20,6 @@
 
 <template>
     <div class="container mx-auto">
-        <!-- <h1 class="text-4xl text-green-500 text-center" v-if="isLoading">Loading....</h1> -->
         <div v-if="isLoading" class="d-flex justify-content-center mt-5">
             <div class="spinner-border text-success" role="status">
                 <span class="visually-hidden">Loading...</span>

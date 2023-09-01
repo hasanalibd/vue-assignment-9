@@ -19,7 +19,6 @@ let isLoading=ref(true)
         isLoading.value=false
         console.log(data);
     } 
-
 </script>
 
 <template>
@@ -34,7 +33,7 @@ let isLoading=ref(true)
             <div class="card" v-for="list in postlist" :key="list.id" v-show="list.id==id">
             <img :src="list.img ? list.img : 'https://ecdn.dhakatribune.net/contents/cache/images/640x359x1/uploads/dten/2016/07/26.jpg'">
             <div class="card-body">
-                <h5 class="card-title">{{ list.title }}</h5>
+                <h2 class="card-title">{{ list.title }}</h2>
                 <p class="card-text">{{ list.short }}</p>
             </div>
             </div>
